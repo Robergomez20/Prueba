@@ -4,30 +4,57 @@
     <meta charset="utf-8">
 
     <title>BEEZ2BIZ</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet">
   </head>
   <body>
+    <div class='col-md-12'>
       <h1>INGENIERO SEMILLERO</h1>
+    </div>
+
 
       <form class="" action="index.html" method="post">
-        <fieldset>
-            <legend>Consulta clima</legend>
-            <label>City: </label><br>
-            <input type="text" name="name" id="ciudad" placeholer="Digite ciudad"><br><br>
-            <input type="button" value="Consultar" id="consultar"/>
-            <input type="reset" value="Borrar">
-        </fieldset>
+
+        <div class='row'>
+
+        </div>
+        <div class='col-md-6'>
+          <legend>Consulta clima</legend>
+          <label>City: </label><br>
+          <input type="text" name="name" id="ciudad" placeholer="Digite ciudad"><br><br>
+          <input type="button" value="Consultar" id="consultar"/>
+          <input type="reset" value="Borrar">
+        </div>
+
       </form>
-          <div class="card">
+
+      <div id="principal" class="row">
+
+        <div class="col-md-12" id="climaInfo" align = "center">
+          <label id="tempClima" value=""></label><br />
+          <label id="pronosticoClima" value=""></label><br />
+          <img id="imgPronostico" src=""/>
+        </div>
+
+        <div id="climaTiempo">
+
+        </div>
+
+      </div>
+
+          <!--<div class="card">
             <h1 id="temperatura"></h1>
-            <h3 id="clima"</h3>
+            <h3 id="clima"></h3>
           </div>
           <div class="card">
             <h1 id="temperatura"></h1>
             <h1 id="latitud"></h1>
             <h3 id="clima"</h3>
             <h3 id="humedad"</h3>
-          </div>
+          </div>-->
 
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" />-->
       <script src="index.js"></script>
 
 </html>
