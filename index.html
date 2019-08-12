@@ -1,60 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-
-    <title>BEEZ2BIZ</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <!-- link de bootstrap para dar stilo a pagina -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
   </head>
   <body>
-    <div class='col-md-12'>
-      <h1>INGENIERO SEMILLERO</h1>
-    </div>
 
-
-      <form class="" action="index.html" method="post">
-
-        <div class='row'>
-
-        </div>
-        <div class='col-md-6'>
-          <legend>Consulta clima</legend>
-          <label>City: </label><br>
-          <input type="text" name="name" id="ciudad" placeholer="Digite ciudad"><br><br>
-          <input type="button" value="Consultar" id="consultar"/>
-          <input type="reset" value="Borrar">
-        </div>
-
-      </form>
-
-      <div id="principal" class="row">
-
-        <div class="col-md-12" id="climaInfo" align = "center">
-          <label id="tempClima" value=""></label><br />
-          <label id="pronosticoClima" value=""></label><br />
-          <img id="imgPronostico" src=""/>
-        </div>
-
-        <div id="climaTiempo">
-
-        </div>
-
-      </div>
-
-          <!--<div class="card">
-            <h1 id="temperatura"></h1>
-            <h3 id="clima"></h3>
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-4 mx-auto text-center">
+          <div class='col-md-12'>
+            <h1>INGENIERO SEMILLERO</h1>
           </div>
-          <div class="card">
-            <h1 id="temperatura"></h1>
-            <h1 id="latitud"></h1>
-            <h3 id="clima"</h3>
-            <h3 id="humedad"</h3>
-          </div>-->
+          <!-- CLIMA FORMULARIO -->
+          <div class="card mt-4">
+            <div class="card-body">
+              <form id="w-form">
+                <div class="form-group">
+                  <label >City: </label><br>
+                  <input type="text" id="ciudad" class="form-control" placeholder="ciudad" autofocus>
+                </div>
 
-      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-      <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" />-->
+                <!-- CLIMA CARD -->
+                <div class="card">
+                  <div class="card-body">
+                    <img id="imgPronostico" src=""/>
+                    <h3 id="tempClima" class="h4"></h3>
+                    <h3 id="pronosticoClima"></h3>
+                    <ul class="list-group mt-3">
+                      <li id="pronosticoClima" class="list-group-item"></li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-dark btn-block" input type="button" value="" id="consultar"/>
+                  Consultar
+
+                  <button class="btn btn-dark btn-block" input type="reset" value="">
+                    Borrar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
       <script src="index.js"></script>
-
+  </body>
 </html>
