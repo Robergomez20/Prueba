@@ -2,7 +2,7 @@
 
 #DESCARGAR 
 
-Descargamos los  archivos  index.html e index.js y los guardamos en una carpeta llamada proyecto.
+Descargamos la carpeta llamda prueba y la descomprimimos.
 
 #EJECUTAR PAGINA
 
