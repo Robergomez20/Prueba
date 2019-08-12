@@ -1,5 +1,9 @@
 #PRUEBA DE SEMILLERO
 
+#DESCAGRGAR 
+
+Descargamos los  archivos  index.html y index.js y los guardamos en una carpeta llamada prueba.
+
 #EJECUTAR PAGINA
 
 Le damos click en nuestra pagina index.html donde nos muestre la pagina en nuestro navegador,despues nos dirigimos a la casilla ciudad donde escribimos la ciudad la cual vamos a consultar dandole click al boton consultar, se conecte a la API para que nos traiga los datos de temperatura y clima por medio del archivo index.js que permite conectar con la API por medio de la autenticación de la key.
